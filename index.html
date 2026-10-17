@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner-friendly personal portfolio website.">
+  <title>My Portfolio | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="#home">MyPortfolio</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">HELLO, WELCOME TO MY WEBSITE</p>
+        <h1>Hi, I'm <span class="accent">Your Name</span></h1>
+        <p class="hero-copy">I'm a student learning web development. This portfolio introduces me, shares my skills, and highlights the projects I'm working on.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore My Projects</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="profile-placeholder" aria-label="Profile illustration">
+        <span>YN</span>
+        <p>Your photo or initials</p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <p class="eyebrow">A LITTLE ABOUT ME</p>
+      <h2>About Me</h2>
+      <p class="section-intro">I am a motivated student who enjoys learning new technology and solving problems. I created this website to practise HTML, CSS, and JavaScript and to present my work in one place.</p>
+    </section>
+
+    <section class="section soft-section" id="skills">
+      <p class="eyebrow">WHAT I'M LEARNING</p>
+      <h2>My Skills</h2>
+      <div class="card-grid skills-grid">
+        <article class="info-card"><span class="card-icon">⌘</span><h3>HTML</h3><p>Building clear, well-structured web pages.</p></article>
+        <article class="info-card"><span class="card-icon">✦</span><h3>CSS</h3><p>Creating attractive layouts and responsive designs.</p></article>
+        <article class="info-card"><span class="card-icon">⚡</span><h3>JavaScript</h3><p>Adding interactions and useful page features.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <p class="eyebrow">THINGS I'VE MADE</p>
+      <h2>My Projects</h2>
+      <div class="card-grid">
+        <article class="info-card project-card"><div class="project-art art-one">01</div><h3>Personal Portfolio</h3><p>A responsive website introducing me and showing my skills.</p><span class="tag">HTML · CSS · JavaScript</span></article>
+        <article class="info-card project-card"><div class="project-art art-two">02</div><h3>Study Planner</h3><p>A concept for organising study tasks and keeping track of goals.</p><span class="tag">Design concept</span></article>
+        <article class="info-card project-card"><div class="project-art art-three">03</div><h3>Mini Web Project</h3><p>A place to showcase another project as I continue learning.</p><span class="tag">Coming soon</span></article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Contact Me</h2>
+      <p class="section-intro">Want to connect or learn more about my work? Use the button below to reveal the contact details you add.</p>
+      <button class="button primary" id="contactButton">Show Contact Details</button>
+      <div class="contact-details" id="contactDetails" hidden>
+        <p><strong>Email:</strong> nagelly.shreya2026@vitstudent.ac.in</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noreferrer">Visit my GitHub profile</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Your Name. Made with HTML, CSS & JavaScript.</p>
+    <button class="back-top" id="backTop" aria-label="Back to top">↑ Back to top</button>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
